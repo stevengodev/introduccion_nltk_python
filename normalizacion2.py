@@ -16,8 +16,13 @@ datos = pd.DataFrame(data)
 x = datos[['duracion', 'rating']]
 y = datos[['genero']]
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=40)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.35, random_state=40)
 
 print("Este es el conjunto de entrenamiento")
 print(x_train)
 print(y_train)
+
+
+print("Este es el conjunto de datos de prueba")
+print(x_test)
+print(y_test)
